@@ -1,13 +1,22 @@
-header{
-    background-color: chartreuse;
-
+body{
+    font-family: Poppins;
 }
 
+.weather-card{
+    background-color: rgb(68, 69, 69);
+    border-radius: 20px;
+    color: rgb(237, 237, 237);
+    display: flex;
 
+    .left{
+        flex: 2;
+        background-image: url("../img/bg.jpg");
+        background-size: cover;
+        background-position: center center;
+        border-radius: 20px;
+    }
 
-a{
-    color: red($color:red);
-    text-decoration: none;
-    background-color: aquamarine;
-   
+    .right{
+        flex: 3;
+    }
 }
