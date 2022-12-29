@@ -32,6 +32,10 @@ body {
 }
 .weather-card > .left h2, .weather-card > .left h4, .weather-card > .left h5 {
   margin: 0;
+  text-shadow: 0 0 5px rgb(200, 200, 200);
+}
+.weather-card > .left .top {
+  z-index: 3;
 }
 .weather-card > .left .top h2 {
   font-size: 2rem;
@@ -39,6 +43,9 @@ body {
 .weather-card > .left .top h4, .weather-card > .left .top h5 {
   font-size: 0.8rem;
   font-weight: 500;
+}
+.weather-card > .left .bottom {
+  z-index: 3;
 }
 .weather-card > .left .bottom h2, .weather-card > .left .bottom h4 {
   font-size: 3rem;
@@ -78,11 +85,18 @@ body {
   padding: 2rem 1rem;
   border-radius: 20px;
 }
-.weather-card > .right ul.days li.active {
+.weather-card > .right ul.days li > span:nth-child(1) {
+  font-size: 2.5rem;
+}
+.weather-card > .right ul.days li > span:nth-child(3) {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.weather-card > .right li.active {
   background-color: rgb(237, 237, 237);
   color: rgb(48, 48, 48);
 }
-.weather-card > .right button {
+.weather-card button {
   padding: 0.5rem;
   border-radius: 20px;
   border: 0;
