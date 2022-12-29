@@ -6,7 +6,7 @@ body{
     border-radius: 20px;
     color: rgb(237, 237, 237);
     display: flex;
-    .left{
+    > .left{
         flex: 2;
         background-image: url("../img/bg.jpg");
         background-size: cover;
@@ -16,6 +16,20 @@ body{
         flex-direction: column;
         justify-content: space-between;
         padding: 20px;
+        position: relative;
+
+        &::before{
+            content: "";
+            background-color: rgba(57, 211, 6, 0.5);
+            position: absolute;
+            top: 0;left: 0; right: 0; bottom: 0;
+            border-radius: 20px;
+            
+         }   
+           
+       
+
+
         h2, h4, h5{
             margin:0;
         }
@@ -38,7 +52,7 @@ body{
             }
         }
     }
-    .right{
+    > .right{
         flex:3;
         padding:20px;
         display: flex;
